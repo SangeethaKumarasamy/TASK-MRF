@@ -125,21 +125,3 @@ function without(a,...b)
 }
 console.log(without(arr1,7,9))
 
-
-
-//groupby 
-let arr3=["one","two","three","four","six","seven"]
-
-function groupbyLength(array)
-{
-   let obj={};
-  let lengtharray=array.map(group_by=>group_by.length)
-  let result= lengtharray.filter((data,index)=> lengtharray.indexOf(data)===index) 
-  for(let i=0;i<result.length;i++)
-  {
-      obj[result[i]]=array.filter(gb=> result[i]==gb.length);
-  }
-  return obj;
-
-} 
-console.log(groupbyLength(arr3));
