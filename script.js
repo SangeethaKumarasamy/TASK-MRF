@@ -116,12 +116,3 @@ function uniq(a)
       return a.filter((data,index)=> a.indexOf(data)===index) 
 }
 console.log(uniq(arr1))
-
-
-//without
-function without(a,...b)
-{
-    return a.filter((data)=>(!b.includes(data)));
-}
-console.log(without(arr1,7,9))
-
